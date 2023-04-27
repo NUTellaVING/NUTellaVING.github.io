@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@200;300;400;500;600;700;800;900&display-swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+section .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section .trees {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 100;
+    pointer-events: none;
+}
+section .girl {
+    position: absolute;
+    scale: 0.65;
+    pointer-events: none;
+    animation: animeGirl 15s linear infinite;
+}
+@keyframes animeGirl {
+    0% {
+        transform: translateX(calc(100% + 100vw));
+    }
+    50% {
+        transform: translateX(calc(-100% - 100vw));
+    }
+    50.01% {
+        transform: translateX(calc(-100% - 100vw)) rotateY(180deg);
+    }
+    100% {
+        transform: translateX(calc(100% + 100vw)) rotateY(180deg);
+    }
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .button {
+    display: inline-block;
+    margin-right: 70px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Add transition effect to transform and box-shadow properties */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0); /* Add initial box shadow with alpha value 0 */
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Add outer glow with alpha value 0.8 */
+  }
+  
+  .button:not(:hover) {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0); /* Set box-shadow to 0 when pointer is not hovering over the button */
+  }
+  
+  .Login {
+    padding: 60px;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    border: 1px solid #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    width: 400px;
+    height: 100px;
+    box-shadow: 0 25px 50px rgba(255, 255, 255, 0.1);
+    z-index: 0;
+  }
+  svg:not(:root).svg-inline--fa {
+    overflow: visible !important;
+  }
+  a:hover, a:focus, a:active, a:visited, a:link{
+    text-decoration: none;
+}
+  
+
+.Leaves {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    pointer-events: none;
+}
+.Leaves .set {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+.Leaves .set div {
+    position: absolute;
+    display: block;
+}
+.Leaves .set div:nth-child(1) {
+    left: 20%;
+    animation: anime 20s linear infinite;
+}
+.Leaves .set div:nth-child(2) {
+    left: 50%;
+    animation: anime 14s linear infinite;
+}
+.Leaves .set div:nth-child(3) {
+    left: 70%;
+    animation: anime 12s linear infinite;
+}
+.Leaves .set div:nth-child(4) {
+    left: 5%;
+    animation: anime 15s linear infinite;
+}
+.Leaves .set div:nth-child(5) {
+    left: 85%;
+    animation: anime 18s linear infinite;
+}
+.Leaves .set div:nth-child(6) {
+    left: 95%;
+    animation: anime 12s linear infinite;
+}
+.Leaves .set div:nth-child(7) {
+    left: 15%;
+    animation: anime 14s linear infinite;
+}
+.Leaves .set div:nth-child(8) {
+    left: 60%;
+    animation: anime 15s linear infinite;
+}
+.Leaves .set div:nth-child(9) {
+    left: 20%;
+    animation: anime 20s linear infinite;
+}
+.Leaves .set div:nth-child(10) {
+    left: 50%;
+    animation: anime 14s linear infinite;
+}
+.Leaves .set div:nth-child(11) {
+    left: 70%;
+    animation: anime 12s linear infinite;
+}
+.Leaves .set div:nth-child(12) {
+    left: 5%;
+    animation: anime 15s linear infinite;
+}
+.Leaves .set div:nth-child(13) {
+    left: 85%;
+    animation: anime 18s linear infinite;
+}
+.Leaves .set div:nth-child(14) {
+    left: 95%;
+    animation: anime 12s linear infinite;
+}
+.Leaves .set div:nth-child(15) {
+    left: 15%;
+    animation: anime 14s linear infinite;
+}
+.Leaves .set div:nth-child(16) {
+    left: 60%;
+    animation: anime 15s linear infinite;
+}
+@keyframes anime {
+    0% {
+        opacity: 0;
+        top: -100%
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(-20px) rotate(45deg);
+    }
+    40% {
+        transform: translateX(-20px) rotate(90deg);
+    }
+    60% {
+        transform: translateX(20px) rotate(180deg);
+    }
+    80% {
+        transform: translateX(-20px) rotate(225deg);
+    }
+    100% {
+        top: 110%;
+        transform: translateX(20px) rotate(225deg);
+    }
+
+}
