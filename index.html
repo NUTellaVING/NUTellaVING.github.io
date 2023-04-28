@@ -1,52 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <script src="https://kit.fontawesome.com/4e7d00e0a6.js" crossorigin="anonymous"></script>
-  <title>NUTella's Project</title>
-  <meta name="description" content="This website was made by me, but some of the elements I changed a little and modified! I host my script project on this website, so please don't try to bypass or crack it.">
-  <link rel="icon" type="image/png" href="favicon.png">
-</head>
-<body>
-<link rel="stylesheet" href="css/style.css">
-<section>
-    <div class="leaves">
-        <div class="set">
-            <div><img src="leaf_01.png"></div>
-            <div><img src="leaf_02.png"></div>
-            <div><img src="leaf_03.png"></div>
-            <div><img src="leaf_04.png"></div>
-            <div><img src="leaf_01.png"></div>
-            <div><img src="leaf_02.png"></div>
-            <div><img src="leaf_03.png"></div>
-            <div><img src="leaf_04.png"></div>
-        </div>
-    </div>
-<img src="bg.jpg" class="bg">
-<img src="girl.png" class="girl">
-<div class="container">
-    <div class="Login" style="display: flex; align-items: center; justify-content: center;">
-      <a href="https://rbscripts.net" target="_blank">
-        <div class="button"style="margin-right: 10px;" >
-          <i class="fa-solid fa-scroll fa-2xl" style="color: #ffffff; font-size: 2.5rem;"></i>
-        </div>
-      </a>
-      <a href="https://rbscripts.net" target="_blank">
-        <div class="button"style="margin-right: 10px;" >
-         <i class="fa-solid fa-globe fa-2xl" style="color: #ffffff; font-size: 2.5rem;"></i>
-        </div>
-      </a>
-      <a href="https://www.youtube.com/@wRBScripts" target="_blank">
-        <div class="button"style="margin-right: 10px;" >
-            <i class="fa-brands fa-youtube" style="color: #ffffff; font-size: 2.5rem;"></i>
-        </div>
-      </a>
-      <a href="https://discord.gg/w9Bq29qrMX" target="_blank">
-        <div class="button" style="margin-right: 10px;">
-            <i class="fa-brands fa-discord" style="color: #ffffff; font-size: 2.5rem;"></i>
-        </div>
-      </a>
-    </div>
-  </div>
-<img src="trees.png" class="trees">
-</section>
-</body>
+<html>
+  <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9480249024938778"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Loadstring Genarator</title>
+  </head>
+  <body>
+    <h1>Loadstring Generator</h1>
+    <p>Enter the code you want to generate a loadstring for:</p>
+    <textarea id="input" rows="10" cols="50"></textarea><br><br>
+    <p>Generated Loadstring:</p>
+    <textarea id="output" rows="10" cols="50" readonly></textarea><br><br>
+    <button onclick="generateLoadstring()">Generate Loadstring</button>
+    <button onclick="copyToClipboard()">Copy to Clipboard</button>
+
+    <script>
+      function generateLoadstring() {
+        var code = document.getElementById("input").value;
+        var loadstring = 'loadstring(game:HttpGet("' + code + '"))()';
+        document.getElementById("output").value = loadstring;
+      }
+
+      function copyToClipboard() {
+        var output = document.getElementById("output");
+        output.select();
+        document.execCommand("copy");
+        alert("Loadstring copied to clipboard!");
+      }
+    </script>
+  </body>
+</html>
