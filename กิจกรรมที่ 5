@@ -1,0 +1,47 @@
+<html>
+    <head>
+      <title>Nuttawut 6</title>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+      <style>
+        body {
+          font-family: 'Kanit', sans-serif;
+        }
+        button {
+          color: #ffffff;
+          background-color: #2d63c8;
+          font-size: 19px;
+          border-radius: 6px;
+          padding: 15px 50px;
+          cursor: pointer;
+          margin: 10px;
+        }
+        button:hover {
+          color: #2d63c8;
+          background-color: #ffffff;
+        }
+        .imgtop {
+            margin: 10px;
+            display: block;
+  margin-left: auto;
+  margin-right: auto;
+        }
+        .textclr {
+            color: #ffffff;
+        }
+      </style>
+    </head>
+    <body bgcolor="#393939" text="white" text-size="10px">
+     <BODY BACKGROUND="https://wallpaperaccess.com/full/7225605.jpg" >
+      <h1><P ALIGN="Center"><b>ออสเตรเลีย (Australia)    </b></h1></p>
+      <h1><P ALIGN="Center">เมืองหลวง: แคนเบอร์รา</h1></p>
+      <h1><P ALIGN="Center">เมืองใหญ่สุด: ซิดนีย์</h1></p>
+      <h1><P ALIGN="Center">ภาษาประจำชาติ: อังกฤษ</h1></p>
+      <h1><P ALIGN="Center">พื้นที่รวม: 7,692,024 ตารางกิโลเมตร</h1></p>
+      <h1><P ALIGN="Center">กีฬาที่ชอบ ไม่มี</h1></p>
+      <h1><P ALIGN="Center">ประชากร 2023 ประมาณ: 26,220,600</h1></p>
+      <h1><P ALIGN="Center">จีดีพี (ราคาตลาด): 1.61 ล้านล้านดอลลาร์สหรัฐ</h1></p>
+      <h1><P ALIGN="Center"><A HREF="https://en.wikipedia.org/wiki/Australia" class="textclr"TARGET="_BLANK">ข้อมูลเพิ่มเติม</A></h1></p>
+      <img class="imgtop" src="https://a.cdn-hotels.com/gdcs/production5/d1996/54fdb73f-eee5-4612-a3e7-6fc7ed2f7bee.jpg" width="800" height="533" border="2" >
+    </body>
+  </html>
+  
